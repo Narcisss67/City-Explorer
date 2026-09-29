@@ -1,0 +1,92 @@
+/* Reset și stiluri generale */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Antet cu Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Secțiuni și Grid pentru Destinații */
+section {
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.grid-container {
+    display: grid;
+    /* Formulă adaptare automată a ecranului conform cerinței */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Carduri destinații */
+.card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Destinație evidențiată */
+.card.featured {
+    border: 2px solid #5b3fd9;
+    background-color: #f9f6ff;
+}
+
+/* Formular (câmpuri unele sub altele și ocupă toată lățimea) */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, 
+form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+input:focus, 
+select:focus {
+    outline: 2px solid #5b3fd9;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #5b3fd9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
