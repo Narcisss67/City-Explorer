@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>City Explorer</h1>
+        <nav>
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinatii">
+            <h2>Destinații</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <h3>Paris</h3>
+                    <p><strong>Țara:</strong> Franța</p>
+                    <p>Orașul luminilor, faimos pentru muzeele sale și arhitectura romantică.</p>
+                    <p><strong>Durata recomandată:</strong> 5 zile</p>
+                </article>
+                <!-- Destinația evidențiată cu clasa 'featured' -->
+                <article class="card featured">
+                    <h3>Lisabona</h3>
+                    <p><strong>Țara:</strong> Portugalia</p>
+                    <p>Un oraș pitoresc pe coline, faimos pentru tramvaiele galbene și ocean.</p>
+                    <p><strong>Durata recomandată:</strong> 4 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Roma</h3>
+                    <p><strong>Țara:</strong> Italia</p>
+                    <p>O istorie vie la fiecare pas, cu o gastronomie excepțională.</p>
+                    <p><strong>Durata recomandată:</strong> 6 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Tokyo</h3>
+                    <p><strong>Țara:</strong> Japonia</p>
+                    <p>O metropolă vibrantă ce combină perfect tehnologia cu tradiția.</p>
+                    <p><strong>Durata recomandată:</strong> 10 zile</p>
+                </article>
+                <article class="card">
+                    <h3>New York</h3>
+                    <p><strong>Țara:</strong> SUA</p>
+                    <p>Orașul care nu doarme niciodată, o experiență culturală unică.</p>
+                    <p><strong>Durata recomandată:</strong> 7 zile</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="planifica">
+            <h2>Planifică o excursie</h2>
+            <form action="#">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text">
+
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination">
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Roma">Roma</option>
+                </select>
+
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number">
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <section id="recomandari">
+            <h2>Recomandări de călătorie</h2>
+            <ul>
+                <li>Cumpără biletele pentru atracțiile principale în avans.</li>
+                <li>Folosește transportul public local pentru a economisi bani.</li>
+                <li>Păstrează copii digitale ale actelor tale de identitate.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Numele Tău</p>
+    </footer>
+</body>
+</html>
